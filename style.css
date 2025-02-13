@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 100vh;
+  background-color: #14161d;
+  display: flex;
+  justify-content: center;
+}
+
+p,
+.label {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.main_div {
+  width: min(1480px, 100% - 4rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.converted_div {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#conv_input,
+#conv_output {
+  padding-inline: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  min-height: 50px;
+  width: 400px;
+}
+
+.bin_dec_div {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+#binary_btn,
+#decimal_btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  color: #ffffff;
+  border: none;
+  border: 2px solid #4325d2;
+  padding: 1rem 3rem;
+  background-color: transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: #4325d2;
+  }
+}
+
+.res_div {
+  margin-top: 2.5rem;
+}
+
+#reset_btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  color: #ffffff;
+  border: none;
+  border: 2px solid #4325d2;
+  padding: 1rem 4rem;
+  background-color: transparent;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background-color: #4325d2;
+  }
+}
+
+@media (max-width: 60em) {
+  p,
+  .label {
+    font-size: 2.1rem;
+  }
+  #binary_btn,
+  #decimal_btn {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.8rem;
+  }
+  #reset_btn {
+    font-size: 0.9rem;
+    padding: 0.8rem 2.8rem;
+  }
+}
+
+@media (max-width: 43em) {
+  p,
+  .label {
+    font-size: 2rem;
+  }
+  #conv_input,
+  #conv_output {
+    padding-inline: 15px;
+    font-size: 0.9rem;
+    min-height: 40px;
+    width: 300px;
+  }
+
+  #binary_btn,
+  #decimal_btn {
+    font-size: 0.7rem;
+    padding: 0.7rem 1.7rem;
+  }
+  #reset_btn {
+    font-size: 0.7rem;
+    padding: 0.7rem 2.7rem;
+  }
+}
