@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/loop-arrow.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>(Bin to Dec / Dec to Bin) Converter</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>(Bin to Dec / Dec to Bin) Converter </title>
-</head>
-
-<body>
-
+  <body>
     <section class="main_div">
+      <p class="heading">Binary or Decimal (Vice Versa) Converter</p>
 
-        <P class="heading">Binary or Decimal (Vice Versa)
-            Converter</P>
+      <input
+        type="text"
+        id="conv_input"
+        maxlength="15"
+        placeholder="Enter your code here ..."
+      />
 
-        <input type="text" id="conv_input" maxlength="15" placeholder="Enter your code here ...">
+      <div class="bin_dec_div">
+        <button id="binary_btn">Convert To Binary</button>
+        <button id="decimal_btn">Convert To Decimal</button>
+      </div>
 
-        <div class="bin_dec_div">
-            <button id="binary_btn">Convert To Binary</button>
-            <button id="decimal_btn">Convert To Decimal</button>
-        </div>
-
-        <div class="converted_div">
-            <label class="label">Converted Value</label><br>
-            <input type="text" id="conv_output" name="conOutput" value="0" readonly>
-
-        </div>
-        <div class="res_div">
-            <button id="reset_btn">Reset</button>
-        </div>
-
-
-
+      <div class="converted_div">
+        <label class="label">Converted Value</label><br />
+        <input
+          type="text"
+          id="conv_output"
+          name="conOutput"
+          value="0"
+          readonly
+        />
+      </div>
+      <div class="res_div">
+        <button id="reset_btn">Reset</button>
+      </div>
     </section>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
