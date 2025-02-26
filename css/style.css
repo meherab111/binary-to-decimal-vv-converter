@@ -18,7 +18,7 @@ p,
   color: #ffffff;
 }
 
-.main_div {
+.main-div {
   width: min(1480px, 100% - 4rem);
   margin-inline: auto;
   display: flex;
@@ -28,7 +28,7 @@ p,
   gap: 2.5rem;
 }
 
-.converted_div {
+.converted-div {
   margin-top: 2.5rem;
   display: flex;
   justify-content: center;
@@ -37,8 +37,8 @@ p,
   gap: 1rem;
 }
 
-#conv_input,
-#conv_output {
+#conv-input,
+#conv-output {
   padding-inline: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2rem;
@@ -48,14 +48,14 @@ p,
   width: 400px;
 }
 
-.bin_dec_div {
+.bin-dec--div {
   display: flex;
   justify-content: space-between;
   gap: 5rem;
 }
 
-#binary_btn,
-#decimal_btn {
+#binary-btn,
+#decimal-btn {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -72,11 +72,11 @@ p,
   }
 }
 
-.res_div {
+.res-div {
   margin-top: 2.5rem;
 }
 
-#reset_btn {
+#reset-btn {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -98,12 +98,12 @@ p,
   .label {
     font-size: 2.1rem;
   }
-  #binary_btn,
-  #decimal_btn {
+  #binary-btn,
+  #decimal-btn {
     font-size: 0.9rem;
     padding: 0.8rem 1.8rem;
   }
-  #reset_btn {
+  #reset-btn {
     font-size: 0.9rem;
     padding: 0.8rem 2.8rem;
   }
@@ -114,20 +114,20 @@ p,
   .label {
     font-size: 2rem;
   }
-  #conv_input,
-  #conv_output {
+  #conv-input,
+  #conv-output {
     padding-inline: 15px;
     font-size: 0.9rem;
     min-height: 40px;
     width: 300px;
   }
 
-  #binary_btn,
-  #decimal_btn {
+  #binary-btn,
+  #decimal-btn {
     font-size: 0.7rem;
     padding: 0.7rem 1.7rem;
   }
-  #reset_btn {
+  #reset-btn {
     font-size: 0.7rem;
     padding: 0.7rem 2.7rem;
   }

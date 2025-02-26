@@ -1,17 +1,18 @@
-let binaryBtn = document.getElementById("binary_btn");
+let binaryBtn = document.getElementById("binary-btn");
 
-let decimalBtn = document.getElementById("decimal_btn");
+let decimalBtn = document.getElementById("decimal-btn");
 
-let resetBtn = document.getElementById("reset_btn");
+let resetBtn = document.getElementById("reset-btn");
 
-let conInput = document.getElementById("conv_input");
+let conInput = document.getElementById("conv-input");
 
-let conOutput = document.getElementById("conv_output");
+let conOutput = document.getElementById("conv-output");
 
 let inputValue;
 
+// Decimal To Binary Converting Functionality
+
 const decToBinFunc = () => {
-  
   inputValue = Math.floor(Math.abs(conInput.value));
 
   if (inputValue == "") {
@@ -51,17 +52,17 @@ const decToBinFunc = () => {
   });
 
   conOutput.value = binaryResult;
-
 };
 
-
-// click event 1
+// Binary Button Click
 
 binaryBtn.addEventListener("click", (event) => {
   event.stopPropagation();
 
   decToBinFunc();
 });
+
+// Binary To Decimal Converting Functionality
 
 const binToDecFunc = () => {
   inputValue = Math.floor(conInput.value);
@@ -105,7 +106,7 @@ const binToDecFunc = () => {
   conOutput.value = decimalResult;
 };
 
-// click event 2
+// Decimal Button Click
 
 decimalBtn.addEventListener("click", (event) => {
   event.stopPropagation();
@@ -113,7 +114,7 @@ decimalBtn.addEventListener("click", (event) => {
   binToDecFunc();
 });
 
-
+// Reset Everything Functionality
 
 const resetFunc = () => {
   conInput.value = "";
@@ -125,7 +126,7 @@ const resetFunc = () => {
   binaryBtn.style.backgroundColor = "";
 };
 
-// click event 3
+// Reset Button Click
 
 resetBtn.addEventListener("click", () => {
   resetFunc();
